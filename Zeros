@@ -1,0 +1,29 @@
+import java.util.*;
+class zeros
+{
+	 static void moveZeroElementToEnd(int[] arr)
+	 {  
+		 int size = arr.length;  
+	     int count = 0;  
+	     for (int i = 0; i < size; i++)
+	     {  
+	    	 if (arr[i] != 0)
+	    	 {  
+	             arr[count++] = arr[i];  
+	         }  
+	     }  
+	  
+	     while (count < size)  
+	     arr[count++] = 0;  
+	 }  
+	  
+	 public static void main(String[] args) 
+	 {  
+	     int[] arr = {12,0,8,0,9,12,15,16 };
+	     moveZeroElementToEnd(arr);   
+	     System.out.print("Array after moving zeros to end : ");
+}
+}  
+	 Output
+
+    Array after moving zeros to end :  12 8 9 12 15  16 0 0 
