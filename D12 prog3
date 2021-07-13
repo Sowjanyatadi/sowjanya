@@ -1,0 +1,27 @@
+
+
+import java.util.*;
+public class insert
+{
+    public static void main (String args[]);
+    {
+        Scanner sc=new Scanner (System.in );
+        String str=sc.next();
+        System.out.print("Enter inserting string:");
+        String ins=sc.next();
+        System.out.print("Enter position to insert:");
+        int p=sc.nextInt();
+        StringBuilder sb=new StringBuilder(str);
+        sb.insert(p,ins);
+        System.out.print(sb.tostring());
+        
+    }
+}
+
+
+Output:
+
+Coding 
+3
+Welcome
+Wecodinglcome
