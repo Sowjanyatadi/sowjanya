@@ -1,0 +1,28 @@
+import java.util.*;  
+
+Class sort
+
+{  
+
+public static void main(String args[])   
+
+{  
+
+String str1[] = { "red", "blue", "green", "pink" };          
+
+String str2[] = { "white", "yellow", "pink" };               
+
+
+list.addAll(Arrays.asList(str2));     
+
+Object[] str3 = list.toArray();         
+
+System.out.println(Arrays.toString(str3)); 
+
+}  
+
+}  
+
+ Output 
+
+Red blue green pink white yellow pink
