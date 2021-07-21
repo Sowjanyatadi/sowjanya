@@ -1,0 +1,50 @@
+
+import java.util.*;
+class map1
+{
+public static void main(String args[])
+{
+HashMap<String,Integer> x=new HashMap<String,Integer>();
+String str[]={"rama","gita","rama","lakshmi","rama","gita","lakshmi","gita","lakshmi"};
+System.out.println("Enter n values:");
+System.out.println ("Enter names:");
+for(int i=0;i<arr.length;i++)
+{
+int key;
+key=arr[i];
+if(x.containsKey(key))
+x.put(key,x.get(key)+1);
+else
+x.put(key,1);
+}
+// for each loop
+for (Map.Entry<Integer, Integer> i : x.entrySet())
+{
+if(i.getValue()>2)
+System.out.println(i.getKey() + " " + i.getValue());
+}
+
+}
+}
+
+
+
+
+Input:
+Enter n value: 9
+Enter names:
+Rama
+Gita
+Rama
+Lakshmi
+Rama
+Gita
+Lakshmi
+Sita
+Lakshmi
+
+Output:
+Rama=3
+Lakshmi=3
+
+
