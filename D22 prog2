@@ -1,0 +1,43 @@
+class Solution
+ {
+	public boolean isValid(String s) {
+		Stack<Character> st=new Stack<Character>();
+        char[] ch=s.toCharArray();
+	    char t;
+	    for(char i:ch) {
+	    	t=st.empty()?'*':st.peek();
+	        if(t=='(' && i==')')
+	        st.pop();
+	        else if(t=='{' && i=='}')
+	        st.pop();
+	        else if(t=='[' && i==']')
+	        st.pop();
+	   else
+		   st.push(i);
+	}
+	  return (st.empty()?true:false);
+
+	 }
+}
+
+
+
+Example 1:
+
+Input: s = "()" Output: true 
+
+Example 2:
+
+Input: s = "()[]{}" Output: true 
+
+Example 3:
+
+Input: s = "(]" Output: false 
+
+Example 4:
+
+Input: s = "([)]" Output: false 
+
+Example 5:
+
+Input: s = "{[]}" Output: true
